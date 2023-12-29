@@ -1,0 +1,55 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #fff;
+  --dark-blue: #004953;
+  --gold:#FFD700;
+}
+
+body {
+  margin: 0;
+  padding:50px;
+  background-color: var(--dark-blue);
+  text-align: center;
+  color: var(--white);
+}
+
+button {
+  cursor: pointer;
+  background-color: var(--gold);
+  border: 3px solid var(--white);
+  color: var(--white);
+  outline: none;
+}
+form{
+  display:block;
+}
+
+input {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border: 1px solid var(--gold);
+  margin-top: 10px;
+}
+
+.results p{
+  margin-block:10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@media (max-width:540px){
+  body{
+    padding:20px;
+    font-size: 13px;
+  }
+
+}
